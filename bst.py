@@ -25,6 +25,11 @@ class Node:
         else:
             self.data = data
 
+    def disconnect(self):
+        self.left = None
+        self.right = None
+        self.parent = None
+
 
 class Tree:
     def __init__(self, nums=None):
